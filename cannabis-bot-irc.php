@@ -1,15 +1,15 @@
 <?php
-/* Bot cannabis éducatif */
-/* Ce bot se connecte au salon, et donne son statut s'il reçoit !statut */
- 
- 
- // Prevent PHP from stopping the script after 30 sec
- set_time_limit(0);
- // Ouvrir the socket to the 6667 network
- $socket = fsockopen("irc.hackint.eu", 6667);
- // Send auth info
- //Il va falloir générer des nick aleatoire car lors des tests, il peut arriver que
- //le serveur mette du temps a détecter que l'ancien pseudo est libre.
+// Bot cannabis éducatif
+// Ce bot se connecte au salon, et donne son statut s'il reçoit !statut.
+
+// Prevent PHP from stopping the script.
+set_time_limit(0);
+// Ouvrir the socket to the 6667 network
+$socket = fsockopen("irc.hackint.eu", 6667);
+
+// Send auth info
+//Il va falloir générer des nick aleatoire car lors des tests, il peut arriver que
+//le serveur mette du temps a détecter que l'ancien pseudo est libre.
  $nick="Cannabis";
  $nb=rand(1,1000);
  $nick.=$nb;
