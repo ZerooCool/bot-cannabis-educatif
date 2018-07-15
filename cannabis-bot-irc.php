@@ -2,24 +2,23 @@
 // Bot cannabis éducatif
 // Ce bot se connecte au salon, et donne son statut s'il reçoit !statut.
 
-// Prevent PHP from stopping the script.
+// Ne pas arrêter le script PHP.
 set_time_limit(0);
-// Ouvrir the socket to the 6667 network
+// Ouvrir le port 6667
 $socket = fsockopen("irc.hackint.eu", 6667);
 
-// Send auth info
-//Il va falloir générer des nick aleatoire car lors des tests, il peut arriver que
-//le serveur mette du temps a détecter que l'ancien pseudo est libre.
- $nick="Cannabis";
- $nb=rand(1,1000);
- $nick.=$nb;
- $chan="vdw";
+// Envoyer les informations de connexion.
+// Il faudrait générer des nick aléatoire pour s'assurer que le pseudo est libre.
+$nick="Cannabis";
+$nb=rand(1,1000);
+$nick.=$nb;
+$chan="vdw";
+
+// NICK permet de s'identifier sur le serveur.
+fputs( $socket , "NICK ".$nick."\r\n" );
+fputs( $socket , "USER guest localhost irc_server :guest\r\n");
  
- // NICK permet de s'identifier sur le serveur.
- fputs( $socket , "NICK ".$nick."\r\n" );
- fputs( $socket , "USER guest localhost irc_server :guest\r\n");
- 
- // Force an endless while
+// Force an endless while
 $acc="Avez vous déjà consommé du cannabis ?";
 
  while(1) {
