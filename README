@@ -1,0 +1,133 @@
+ // $LastTime = date('H');
+ // $LastTime = array('donnee' => 'date('H')');		
+	// $h00=date('H');
+	// $h01=date('H');
+	// $h02=date('H');
+	 // $h03=date('H');
+	 // $h04=date('H');
+	 // $h05=date('H');
+	 // $h06=date('H');
+	 // $h07=date('H');
+	 // $h08=date('H');
+	 // $h09=date('H');
+	 // $h10=date('H');
+	 // $h11=date('H');
+	 // $h12=date('H');
+	 // $h13=date('H');
+	 // $h14=date('H');
+	 // $h15=date('H');
+	 // $h16=date('H');
+	 // $h17=date('H');
+	 // $h18=date('H');
+	 // $h19=date('H');
+	 // $h20=date('H');
+	 // $h21=date('H');
+	 // $h22=date('H');
+	 // $h23=date('H');
+
+
+// if (strstr($LastTime = $h04)) {
+// fputs($socket, "PRIVMSG ".$ex[2]." :Il est 4 heures du matin.\r\n");
+// $LastTime = "$LastTime+1";}
+
+
+
+
+
+//$date = date("d-m-Y");
+//$heure = date("H:i");
+//Print("Nous sommes le $date et il est $heure");
+
+
+//  Comment prendre en compte minuscule et majuscule ? 
+//while(true) {
+//  usleep(450000); // boucle toutes les 450ms à l'infini
+//}
+
+
+
+
+
+
+
+#########################################
+
+DE GECKO
+
+fputs($socket , "NICK ".$nick."\r\n");
+ fputs( $socket , "USER guest localhost irc_server :guest\r\n");
+
+-> ???
+
+function sendCmd($socket, $msg) {
+  fputs($socket, $msg."\r\n");}
+}
+sendCmd($socket, 'coucou'!);
+
+
+
+TOOOOOP GECKO !!
+
+$toCatch = ['pwet! pwet!' => 't\'as pas dit camion!'];
+foreach($toCatch as $s => $r) {
+  if(strstr($data, $s)) {
+    sendCmd($socket, $r);
+  }
+}
+
+
+
+
+
+
+
+
+.timer 13:00 1 1 say Bon appétit 
+10:52:06 PM
+Animateur
+.timer 14:00 1 1 say Une petite sieste 
+10:52:43 PM
+Animateur
+.timer 18:00 1 1 L'heure de préparer le repas... 
+10:52:43 PM
+Animateur
+.timer 20:00 1 1 say On travail ou on fait la fête ? 
+10:53:04 PM
+Animateur
+.timer 07:00 1 1 say Si tôt ... 
+10:53:23 PM
+Animateur
+.timer 08:00 1 1 say Tellement tôt ... 
+10:53:40 PM
+Animateur
+.timer 09:00 1 1 say Encore trop tôt ... 
+10:54:12 PM
+Animateur
+.timer 10:00 1 1 say Toujours pas la Zer00CooL ? 
+10:54:59 PM
+Animateur
+.timer 11:00 1 1 say C'est l'heure de travailler ... 
+10:55:50 PM
+Animateur
+.timer 12:00 1 1 say J'ai faim ! Je reviens ... 
+10:56:18 PM
+Animateur
+.timer 16:00 1 1 say Idée ! Café ? 
+
+
+##################################################
+
+
+En console !!!!! DEBOGUER !!!!! AVEC CONSOLE CLI
+getopt
+
+
+Deboguer PHP
+en gros j'utilise set_error_handler et set_exception_handler pour catch les erreurs et les mettres dans un fichier log, si j'utilise l'option --debug dans le CLI ça les affiches
+
+
+ ZerooCool> ensuite pour lancer depuis le CLI tu peux simplement faire ça :
+$opts = getopt('u:p:r:h:');
+00:23 [Gecko]: derrière quand tu feras
+php5 script.php -u "toto"
+00:23 [Gecko]: $opts['u'] vaudra toto
